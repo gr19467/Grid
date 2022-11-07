@@ -1,0 +1,32 @@
+.grid-1{
+    padding: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-2{
+    padding: 2px;
+    display: grid;
+
+    grid-template-areas:
+        'header header header header'
+        'menu menu main right'
+        'footer footer footer footer';
+}
+
+.grid-3{
+
+}
+
+.grid-item{
+    background-color: green;
+    border: greenyellow solid 1px;
+    text-align: center;
+    padding: 5px;
+}
