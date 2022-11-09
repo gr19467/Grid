@@ -4,20 +4,25 @@
     grid-template-columns: auto auto auto;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item-1 { grid-area: item1; }
+.item-2 { grid-area: item2; }
+.item-3 { grid-area: item3; }
+.item-4 { grid-area: item4; }
+.item-5 { grid-area: item5; }
 
 .grid-2{
-    padding: 2px;
     display: grid;
 
     grid-template-areas:
-        'header header header header'
-        'menu menu main right'
-        'footer footer footer footer';
+        'item1 item1 item1 item1 item1'
+        'item2 item3 item3 item4'
+        'item5 item5 item5 item5 item5';
+
+    gap: 10px;
+    background-color: green;
+    border: greenyellow solid 1px;
+    text-align: center;
+    padding: 5px;
 }
 
 .grid-3{
